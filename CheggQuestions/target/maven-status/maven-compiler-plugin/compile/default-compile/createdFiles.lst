@@ -1,0 +1,11 @@
+dto\ImageFile.class
+dto\FileType.class
+services\DatParserService.class
+controller\ApplicationController.class
+dto\RequestForm.class
+services\PngParserService.class
+dto\CsvFile.class
+controller\ParserController.class
+services\CsvParserService.class
+services\Parser.class
+controller\Application.class

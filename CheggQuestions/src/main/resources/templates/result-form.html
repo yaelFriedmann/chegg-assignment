@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Questions Result</title>
+</head>
+<body>
+<table border="1px solid black">
+    <tr>
+        <th>#</th>
+        <th>Type</th>
+        <th>Question</th>
+    </tr>
+    <tr th:each="question,iterationstatus :${questions}">
+        <td th:text="${iterationstatus.count}">1</td>
+        <td th:text="${question.fileType}"></td>
+        <td th:text="${question.question}"></td>
+    </tr>
+</table>
+</body>
+</html>

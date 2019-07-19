@@ -1,0 +1,11 @@
+C:\Dev\CheggQuestions\src\main\java\controller\Application.java
+C:\Dev\CheggQuestions\src\main\java\dto\RequestForm.java
+C:\Dev\CheggQuestions\src\main\java\controller\ApplicationController.java
+C:\Dev\CheggQuestions\src\main\java\services\DatParserService.java
+C:\Dev\CheggQuestions\src\main\java\services\Parser.java
+C:\Dev\CheggQuestions\src\main\java\controller\ParserController.java
+C:\Dev\CheggQuestions\src\main\java\dto\CsvFile.java
+C:\Dev\CheggQuestions\src\main\java\dto\FileType.java
+C:\Dev\CheggQuestions\src\main\java\services\CsvParserService.java
+C:\Dev\CheggQuestions\src\main\java\dto\ImageFile.java
+C:\Dev\CheggQuestions\src\main\java\services\PngParserService.java
