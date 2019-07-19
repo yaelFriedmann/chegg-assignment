@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>What is your questions?</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body style="background-color: antiquewhite">
+    <p th:text="'Hello, please fill the form:'"/>
+    <form action="#" th:action="@{/parse}" th:object="${requestForm}" method="get">
+        <p>Manifest: <input style="width: 400px" type="text" th:field="*{manifest}"/></p>
+        <p>File type : (if you don't select any of the types, all types will be selected)
+        <ul>
+            <li th:each="fileType : ${fileTypes}">
+                <input type="checkbox" name="fileTypeList" th:value="${fileType}"/>
+                <label th:text="${fileType}"></label>
+            </li>
+        </ul>
+
+        <p><input type="submit" value="Submit"/></p>
+    </form>
+</body>
+</html>

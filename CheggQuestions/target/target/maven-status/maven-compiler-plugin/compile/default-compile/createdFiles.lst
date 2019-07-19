@@ -1,0 +1,14 @@
+controller\ApplicationController.class
+dto\RequestForm.class
+services\fileParser\JsonQuestionsParserService.class
+dto\Record.class
+services\QuestionsRetrieverService.class
+controller\Application.class
+dto\FileType.class
+dto\Question.class
+services\DatParserService.class
+dto\QuestionsFromJsonFile.class
+services\fileParser\PngQuestionsParserService.class
+services\fileParser\QuestionsParser.class
+services\QuestionsRetrieverService$1.class
+services\fileParser\CsvQuestionsParserService.class
