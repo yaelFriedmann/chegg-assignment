@@ -1,54 +1,38 @@
-# Project Name
-Project description: A good description is clear, short, and to the point. Describe the importance of your project, and what it does.
+# Chegg-Assignment
+Project description: R# Chegg-Assignment
+Project description: Read .dat file with URLs, and retrieve from each URL the questions in the file
 
 ## (Table of Contents)
-Optionally, include a table of contents in order to allow other people to quickly navigate especially long or detailed READMEs.
+Optionally, include a table of contents to allow other people to quickly navigate especially long or detailed READMEs.
 
 ## Getting Started
 ### Prerequisites
-What things you need to install before you can statrt installing the software itself.
+You need to install Docker in your machine
 
 ### Installation
-Installation is the next section in an effective README. Tell other users how to install your project locally. Optionally, include a gif to make the process even more clear for other people.
+1. download the folder chegg-target
 
 ### Configuration
-Explain how to configure the applcation and the possible options.
+1. open cmd on the folder path and run:
+  1.1  docker build -t chegg-questions:latest .
+  1.2  docker run -d  -p 8080:8080 chegg-questions:latest
 
 ## Usage
-The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.ng
+1. go to your browser and redirect to http://localhost:8080
+2. in the manifest field, insert the URL where your .dat file with your URLs exist
+3. if you want specific file types, select in the checkboxes
+4. click submit
+5. the question list will be open in a table
 
-## Contributing
-Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for [setting guidelines for repository contributors](https://help.github.com/articles/setting-guidelines-for-repository-contributors/).
-
-### Setup
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Running the tests
-Explain how to run the automated tests for this system. CI/CD Details, ...
+### About the project
+1. the request to retrieve the questions has timeout, you can change the timeout in the properties file 
+2. the project was written in java spring boot application
+3. all the requests are processed multithread
+4. If csv line fields don’t contains 3 fields in the same order (id, text, type), this question won't be retrieve
 
 ### Logging
-How is logging configured and what is the location of the log files
+If there is any error, the "error" page will be open,
+for now, I didn't add logger
 
-### Versioning
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Credits
-Include a section for credits in order to highlight and link to the authors of your project.
-
-## License
-Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s [licensing guide](https://choosealicense.com/)!
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
-[build-url]: #
-[contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
-[license-url]: https://choosealicense.com/licenses/mit
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/screenshot.png
+### Testing
+need to be added...
