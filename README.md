@@ -5,7 +5,7 @@ Read .dat file with URLs, scrape and parse the content to get list of questions 
  
 ## Getting Started
 ### Prerequisites
-Install Docker in your machine, See [https://docs.docker.com/installation/#installation] for details on setting Docker up for your machine.
+Install Docker in your machine, See https://docs.docker.com/installation/#installation for details on setting Docker up for your machine.
 
 ### Installation
 Download the folder chegg-docke-installation that is attached in the email
