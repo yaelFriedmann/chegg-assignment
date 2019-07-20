@@ -8,10 +8,10 @@ Read .dat file with URLs, scrape and parse the content to get list of questions 
 Install Docker in your machine, See https://docs.docker.com/installation/#installation for details on setting Docker up for your machine.
 
 ### Installation
-Download the folder chegg-docke-installation that is attached in the email
+Download the folder chegg-installation that is attached in the email
 
 ### Run the docker
-cd <path of the chegg-docke-installation folder> and run:
+cd <path of the chegg-installation folder> and run:
   1. docker build -t chegg-questions:latest .
   2. docker run -d  -p 8080:8080 chegg-questions:latest
 ## Usage
