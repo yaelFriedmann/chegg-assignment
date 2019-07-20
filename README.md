@@ -1,36 +1,35 @@
 # Chegg-Assignment
 
 ## Project description: 
-Read .dat file with URLs, and retrieve from each URL the questions in the file
-
+Read .dat file with URLs, scrape and parse the content to get list of questions from each one.
+ 
 ## Getting Started
 ### Prerequisites
-You need to install Docker in your machine
+Install Docker in your machine, See [https://docs.docker.com/installation/#installation] for details on setting Docker up for your machine.
 
 ### Installation
-1. download the folder chegg-target
+Download the folder chegg-docke-installation that is attached in the email
 
-### Configuration
-1. open cmd on the folder path and run:
-  1.1  docker build -t chegg-questions:latest .
-  1.2  docker run -d  -p 8080:8080 chegg-questions:latest
-
+### Run the docker
+cd <path of the chegg-docke-installation folder> and run:
+  1. docker build -t chegg-questions:latest .
+  2. docker run -d  -p 8080:8080 chegg-questions:latest
 ## Usage
-1. go to your browser and redirect to http://localhost:8080
-2. in the manifest field, insert the URL where your .dat file with your URLs exist
-3. if you want specific file types, select in the checkboxes
-4. click submit
-5. the question list will be open in a table
+1. Go to your browser and redirect to http://localhost:8080
+2. In the manifest field, insert the URL where your .dat file with your URLs exist
+3. If you want specific file types, select in the checkboxes
+4. Click submit
+5. The question list will be presented on the screen
 
 ### About the project
-1. the request to retrieve the questions has timeout, you can change the timeout in the properties file 
-2. the project was written in java spring boot application
-3. all the requests are processed multithread
-4. If csv line fields don’t contains 3 fields in the same order (id, text, type), this question won't be retrieve
+1. The request to retrieve the questions has timeout, you can change the timeout in the properties file (src\main\resources\application.properties)
+2. The project was written in java spring boot application
+3. All the requests are processed multithread
+4. If csv line fields don’t contain 3 fields in the same order (id, text, type), this question won't be retrieve
 
 ### Logging
 If there is any error, the "error" page will be open,
-for now, I didn't add logger
+TODO – add logger
 
 ### Testing
-need to be added...
+TODO – add tests
