@@ -1,6 +1,7 @@
 # Chegg-Assignment
-Project description: R# Chegg-Assignment
-Project description: Read .dat file with URLs, and retrieve from each URL the questions in the file
+
+## Project description: 
+Read .dat file with URLs, and retrieve from each URL the questions in the file
 
 ## (Table of Contents)
 Optionally, include a table of contents to allow other people to quickly navigate especially long or detailed READMEs.
